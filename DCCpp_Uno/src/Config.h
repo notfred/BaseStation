@@ -35,6 +35,18 @@ Part of DCC++ BASE STATION for the Arduino
 
 #define COMM_INTERFACE   1
 
+/////////////////////////////////////////////////////////////////////////////////////
+//
+// DEFINE SERIAL PORT 
+//
+// (only valid if COMM_INTERFACE is 0)
+
+// defaults are Serial and 115200
+
+# define COMM_SERIAL_PORT Serial
+# define COMM_BAUD_RATE 9600
+# define DEBUG_INTERFACE Serial
+
 #if COMM_INTERFACE == 4
 	/////////////////////////////////////////////////////////////////////////////////////
 	//
